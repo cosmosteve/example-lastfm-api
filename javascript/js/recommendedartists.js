@@ -29,7 +29,8 @@ jQuery(document).ready(function() {
             token: token
         }, {
             success: function(data_sess) {
-
+                jQuery('<p>' + data_sess.session.key + '</p>').appendTo('#recommended-artists');
+                //alert(data_sess.session.key);
                 lastfm.user.getRecommendedArtists({
                     user: user,
                     limit: 10
