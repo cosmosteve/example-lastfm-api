@@ -13,6 +13,7 @@ jQuery(document).ready(function() {
     
     // Get and show the 10 top artists for user noisedriver :
     getTopArtists('noisedriver', 10);
+    //getTopArtists('ponnewon', 10);
 });
 
 /**
