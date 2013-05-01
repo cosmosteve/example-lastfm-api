@@ -38,9 +38,12 @@ jQuery(document).ready(function() {
 });
 
 scrobble = function() {
+    encode = function (string) {
+        return string.toString().replace(/ /g, "+");
+    };
     LAST_FM.track.scrobble({
-        artist      : $('input[name=artist]', '#scrobbler').val(),
-        track       : $('input[name=track]', '#scrobbler').val(),
+        artist      : encode($('input[name=artist]', '#scrobbler').val()),
+        track       : encode($('input[name=track]', '#scrobbler').val()),
         user        : USERNAME,
         timestamp   : TIMESTAMP
     }, {
