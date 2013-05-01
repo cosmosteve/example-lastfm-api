@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Last.fm | Scrobbler</title>
+        <meta name="language" content="english"/>
+        <meta name="description" content="SoundSuggest - Thesis KUL - Visualization of music suggestions"/>
+        <meta name="keywords" content="soundsuggest visualization of music suggestions" />
+        <link rel="shortcut icon" href="data/img/icon.gif" />
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="js/lib/purl/purl.js"></script>
+        <script type="text/javascript" src="js/lib/lastfm/lastfm.api.md5.js"></script>
+        <script type="text/javascript" src="js/lib/lastfm/lastfm.api.cache.js"></script>
+        <script type="text/javascript" src="js/lib/lastfm/lastfm.api.js"></script>
+        <script type="text/javascript" src="js/scrobbler.js"></script>
+    </head>
+    <body>
+        <h1>SoundSuggest - Visualization of Music Suggestions</h1>
+        <h2>Last.fm API - Example : scrobbler</h2>
+        <div id="scrobbler">
+            <table>
+                <tr>
+                    <td>
+                        Track
+                    </td>
+                    <td>
+                        <input type="text" name="track"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Artist
+                    </td>
+                    <td>
+                        <input type="text" name="artist"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Number of scrobbles
+                    </td>
+                    <td>
+                        <input type="text" name="times"/>
+                    </td>
+                </tr>
+            </table>
+            <button onclick="scrobble();" name="btn_scrobble">Scrobble</button>
+        </div>
+    </body>
+</html>
